@@ -1,0 +1,131 @@
+/* Working on Styling on Everything */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Making calculator Center on the page */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #1e1e1e;
+}
+
+/* Here I am Working on Calculator container */
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid orange;
+    background-color: black;
+    padding: 20px;
+    border-radius: 15px;
+    width: 320px;
+    box-shadow: 0px 4px 10px rgba(255, 165, 0, 0.4);
+}
+
+/* Here I am Working on Input Display */
+.input {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input input {
+    width: 100%;
+    height: 80px;
+    font-size: 2rem;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    background: #222;
+    color: white;
+    border-radius: 8px;
+    outline: none;
+    overflow: hidden;
+}
+
+/* Here I am Working On Button Container */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+/* Here I am Workin on Delete Buttons */
+.button-delete {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-delete button {
+    flex: 1;
+    height: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    background: linear-gradient(145deg, #ff7043, #d84315);
+    color: white;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    margin: 5px;
+}
+
+.button-delete button:hover {
+    background: linear-gradient(145deg, #e64a19, #bf360c);
+    transform: scale(1.05);
+}
+
+/* Here I am Working on Number and Operator Buttons */
+.button-column-1,
+.button-column-2,
+.button-column-3,
+.button-column-4 {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Make Style of General Buttons */
+.btn {
+    flex: 1;
+    height: 60px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    margin: 5px;
+    transition: 0.2s;
+    background-color: #333;
+    color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: orange;
+    transform: scale(1.1);
+}
+
+/* Workin On Operator Buttons */
+.col4 {
+    background: orange;
+    color: white;
+}
+
+.col4:hover {
+    background: red;
+}
+
+/* Making Design Responsive */
+@media (max-width: 400px) {
+    .calculator {
+        width: 100%;
+        max-width: 320px;
+    }
+}
