@@ -1,0 +1,66 @@
+/* Here I am Setting Up Calculator Div */
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid orange;
+    height: 500px;
+    width: 300px;
+    background-color: black;
+    border-radius: 15px;
+}
+
+/* Here I am working on input types */
+
+.input {
+    background-color: grey;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 35px;
+    text-align: right;
+}
+input {
+    border: none;
+    height: 120px;
+    width: 280px;
+    font-size: 80px;
+    font-display: r;
+}
+
+/* Here I have did some stiing on body */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Now I have to figure out how to increase buttons size and make them on same level */
+button {
+    height: 70px;
+    width: 70px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: orange;
+}
+
+.col4 {
+    background: orange;
+}
+.col4:hover {
+    background: red;
+}
+
+/* Now Working on Div Of Buttons TO align them and add border */
+.button-container {
+    margin-top: 200px;
+}
